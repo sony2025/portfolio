@@ -1,0 +1,410 @@
+/* Stylesheet for SONIA B. personal portfolio website */
+/*RESET Y GENERALES*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 10%, 43%);
+}
+body {
+    background-color: hsl(186, 15%, 72%);
+    font-size: 16px;
+    line-height: 1.6;
+}
+/*HEADER - HERO*/
+header {
+    position: relative;
+    overflow: hidden;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(186, 15%, 72%);
+    text-align:center;
+    padding: 30px;
+}
+header video {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.35;
+    pointer-events: none;
+}
+header .circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-color: hsl(170, 97%, 50%);
+    position: relative;
+    z-index: 1;
+}
+header h1, header h2 {
+    position: relative;
+    z-index: 1;
+    color: hsl(0, 10%, 43%);
+}
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 10px 0;
+}
+/*NAVBAR- Barra de Navegación fijada */
+nav#navbar {
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: relative;
+    z-index: 10;
+    padding-bottom: 8px;
+    position: sticky;
+}
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: hsla(0, 0%, 100%, 0.95);
+}.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    text-decoration: none;
+    color: hsl(0, 10%, 43%);
+    font-weight: bold;
+    font-size: 2.0rem;
+}
+/* Logo pequeño circular dentro de la navbar */
+.navbar-brand .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(170, 97%, 50%);
+    margin-right: 10px;
+}
+/* SB-s.e.navbar-title */
+.navbar-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: hsl(0, 10%, 43%);
+    display: flex;
+    align-items: center;
+}
+/* Botón de menú hamburguesa */
+#hamburger {
+    font-size: 3rem;
+    background-color: hsl(170, 97%, 50%);
+    border-radius: 50%;
+    padding: 1px;
+    align-content: center;
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 10%, 43%);
+    margin-left: 16px;
+}
+/*MENÚ DE NAVEGACIÓN*/
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+    margin: 0;
+    padding: 0 16px;
+    width: 100%;
+}
+.navbar-menu li a {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin:0;
+    padding: 0 16px;
+    padding: 0px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: hsl(180, 20%, 98%);
+    color: hsl(0, 10%, 43%);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px hsl(170, 97%, 50%)
+}
+.navbar-menu li a:hover {
+    background: hsl(186, 15%, 72%);
+    color: #fff;
+    box-shadow: 0 4px 16px hsl(186, 15%, 72%);
+}
+/* Barra de navegación fija en la parte superior */
+#navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+/* Para que el contenido no quede oculto debajo del navbar fijo */
+main {/* Ajusta el padding-top según la altura de tu navbar */
+    main {
+    padding: 10px;
+    background-color: hsl(186, 15%, 72%);
+} 
+}
+/*SECCIONES PRINCIPALES*/
+main {
+    padding: 10px;
+    background-color: hsl(186, 15%, 72%)
+}
+section > h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    margin-top: 24px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+/* Gradientes de fondo para secciones */
+section.portfolio {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    border-radius: 24px;
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+section.skillset {
+    background: linear-gradient(135deg, #f7f7fa 0%, #e6f0fa 100%);
+    border-radius: 24px;
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+section.experience {
+    background: linear-gradient(135deg, #f8f8fc 0%, #e8f6f8 100%);
+    border-radius: 24px;
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+section#contact {
+    background: linear-gradient(135deg, #f9fafb 0%, #e7f7f7 100%);
+    border-radius: 24px;
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+section#social {
+    background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+    border-radius: 24px;
+    padding: 32px 0;
+    margin-bottom: 32px;
+}
+/*PORTFOLIO, SKILLSET, EXPERIENCE*/
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px; /* Espaciado entre imágenes */
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+.row-flex > div,
+.row-flex > .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Imágenes circulares para portfolio y experience */
+.portfolio .small-image,
+.experience .small-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+.portfolio .small-image:hover,
+.experience .small-image:hover {
+    transform: scale(1.05);
+}
+/* Skillset */
+.skill-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.skill-item img:hover {
+    transform: scale(1.05);
+}
+/* Tooltip para skillset */
+.skill-item .tooltip {
+    display: none;
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    color: #222;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    white-space: nowrap;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+.skill-item img:hover + .tooltip {
+    display: block;
+}
+/*FORMULARIO DE CONTACTO */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form label {
+    font-weight: bold;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid hsl(0, 10%, 43%);
+    background: hsl(180, 14%, 96%);
+    color: hsl(0, 10%, 43%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+form button {
+    align-self: flex-end;
+    color: hsl(0, 10%, 43%);
+    font-weight: bolder;
+    background: hsl(170, 97%, 50%);
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 25px 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+form button:hover {
+    background: hsl(0, 20%, 75%);
+}
+/*BOTONES GENERALES*/
+button {
+    background: hsl(0, 15%, 72%);
+    border: none;
+    padding: 20px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    transition: background 0.3s;
+}
+button:hover {
+    background: hsl(0, 20%, 75%);
+}
+/*FOOTER*/
+footer {
+    background: hsl(170, 97%, 50%);
+    color: hsl(180, 14%, 96%);
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background: hsl(170,97%, 50%);
+    color: hsl(180, 14%, 96%);
+    font-size: 0.9rem;
+}
+/*SOCIAL links with hover effect*/
+#social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fce7e7;
+    align-items: center;
+}
+#social img:hover {
+    transform: scale(1.8);
+    transition: transform 0.3s;
+    border-radius: 50%;
+    display: flex;
+}
+/*SOCIAL links - Icons - main images */
+img {
+    display: flex !important;
+    max-width: 100%;
+    margin: 0 auto;
+    align-content:flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    align-items: center;
+    transition: transform 0.3s;
+    transform: scale(1.2);
+    gap: 20px;
+    border-radius: 50%;
+    background-color: hsl(170, 97%, 50%);
+    justify-content: center;
+    color: #fce7e7;
+}
+/* Menú horizontal por defecto (escritorio) */
+.navbar-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    position: static;
+    background: none;
+    box-shadow: none;
+}
+/* Oculta el botón hamburguesa en escritorio */
+#hamburger {
+    display: none;
+}
+/* Solo en móvil: menú vertical y botón hamburguesa visible */
+@media (max-width: 768px) {
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px; /* ajusta según tu header */
+        right: 0;
+        width: 200px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        gap: 0;
+    }
+    #navbar.open .navbar-menu {
+        display: flex;
+    }
+    #hamburger {
+        display: block;
+    }
+}

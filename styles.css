@@ -407,4 +407,21 @@ img {
     #hamburger {
         display: block;
     }
+} /* <--- ESTA LLAVE CIERRE EL MEDIA QUERY */
+section p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    color: hsl(0, 10%, 43%);
+}
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section ul li {
+    margin: 10px 0;
 }
